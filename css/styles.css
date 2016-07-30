@@ -1,0 +1,58 @@
+  	#video_box{
+	  position:relative;
+	}
+
+	#hotspot {
+		position:absolute;
+		background: #fff none repeat scroll 0 0 padding-box;
+	    border: 16px solid rgba(204, 0, 0, 0.3);
+	    border-radius: 100%;
+	    box-shadow: 0 0 0 1px rgba(204, 0, 0, 0.6);
+	    content: "";
+	    cursor: pointer;
+	    display: none;
+	    height: 7px;
+	    opacity: 1;
+	    transition: border 300ms ease 0s, visibility 300ms ease 0s, opacity 300ms ease 0s;
+	    visibility: visible;
+	    width: 7px;
+	    z-index: 999;
+	}
+
+	#hotspot:hover {
+	    border-color: rgba(204, 0, 0, 0.5);
+	    box-shadow: 0 0 0 1px rgba(204, 0, 0, 0.8);
+	}
+
+	#sampleVideo{
+		position: fixed; right: 0; bottom: 0;
+		min-width: 100%; min-height: 100%;
+		width: auto; height: auto; z-index: -100;
+		/*background: url(background.jpg) no-repeat;*/
+		background-size: cover;
+	}
+
+	#caption {
+		position: relative;
+	    display:none;
+	    z-index:1000;
+		background: blue;
+		color: #fff;
+		font-weight: bold;
+		padding: 15px 0;
+		width: 200px;
+		text-align: center;
+	}
+
+	#caption:after{
+		content: '';
+		display: block;  
+		position: absolute;
+		left: 0;
+		top: 100%;
+		width: 0;
+		height: 0;
+		border-top: 30px solid blue;
+		border-right: 20px solid transparent;
+		border-bottom: 0 solid transparent;
+	}

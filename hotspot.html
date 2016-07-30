@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head>
+  	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  	<title>Hotspot Example</title>
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+<body>
+
+    <div id="video_box">
+        <div id="caption"></div>
+        <div id="hotspot"></div>
+        <div>
+        	<video id='sampleVideo' controls>
+            	<source id='mp4' src="./video/DUET-CSE-9th-Batch-Long-Tour.mp4" type='video/mp4'>
+            	<p>HTML5 Video is not supported by this browser.</p>
+            </video>
+        </div>
+    </div>
+
+	<script type="text/javascript" src="script/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="script/scripts.js"></script>
+
+	<script type="text/javascript">
+		(function($){
+			$(window).bind('load', init);
+		})($);
+	</script>
+
+</body>
+</html>
