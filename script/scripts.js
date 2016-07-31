@@ -7,7 +7,10 @@
 	var arrHotspots = [
 		{"startTime":1,"endTime":4,"top":100,"left":100,"text":"Razia & Tania apa"},
 		{"startTime":7,"endTime":8,"top":100,"left":230,"text":"Naznin Sultana & Akhi Hafsa"},
-		{"startTime":24,"endTime":34,"top":202,"left":635,"text":"Md Robiul Alam."}
+		{"startTime":10,"endTime":15,"top":100,"left":500,"text":"Md Robiul Alam"},
+		{"startTime":18,"endTime":20,"top":100,"left":550,"text":"Taposh"},
+		{"startTime":28,"endTime":30,"top":100,"left":600,"text":"Md Mahbub Alam Sir"},
+		{"startTime":57,"endTime":60,"top":150,"left":380,"text":"Sandipan Saha"}
 	];
 	
 	function init() {
