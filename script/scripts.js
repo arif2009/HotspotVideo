@@ -1,23 +1,15 @@
 	'use strict';
+	//Extend jQuery function : http://stackoverflow.com/a/36186735/3835843
 	
-	// Currently shown hotspot.
- 	var idxHotspot = -1;
-	
-	// Set up our hotspots.
-	var arrHotspots = [
-		{"startTime":1,"endTime":4,"top":100,"left":100,"text":"Razia & Tania apa"},
-		{"startTime":7,"endTime":8,"top":100,"left":230,"text":"Naznin Sultana & Akhi Hafsa"},
-		{"startTime":10,"endTime":15,"top":100,"left":500,"text":"Md Robiul Alam"},
-		{"startTime":18,"endTime":20,"top":100,"left":550,"text":"Taposh"},
-		{"startTime":28,"endTime":30,"top":100,"left":600,"text":"Md Mahbub Alam Sir"},
-		{"startTime":57,"endTime":60,"top":150,"left":380,"text":"Sandipan Saha"}
-	];
-	
-	function init() {
+	function init(settings) {
 		
-		var video = $('#sampleVideo')[0];
-		var $hotspot = $('#hotspot');
-		var $caption = $('#caption');
+		var video = $(settings.video)[0];
+		var $hotspot = $(settings.hotspot);
+		var $caption = $(settings.caption);
+		var arrHotspots = settings.hotspotPositions;
+
+		// Currently shown hotspot.
+ 		var idxHotspot = -1;
 		
 		// Add the mouse events for the hotspot
 		$hotspot.bind('mouseover', function(event) {

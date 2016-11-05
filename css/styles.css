@@ -2,6 +2,31 @@
 	  position:relative;
 	}
 
+	#caption {
+		position: absolute;
+	    display:none;
+	    z-index:1000;
+		background: blue;
+		color: #fff;
+		font-weight: bold;
+		padding: 15px 0;
+		width: 200px;
+		text-align: center;
+	}
+
+	#caption:after{
+		content: '';
+		display: block;  
+		position: absolute;
+		left: 0;
+		top: 100%;
+		width: 0;
+		height: 0;
+		border-top: 30px solid blue;
+		border-right: 20px solid transparent;
+		border-bottom: 0 solid transparent;
+	}
+
 	#hotspot {
 		position:absolute;
 		background: #fff none repeat scroll 0 0 padding-box;
@@ -30,29 +55,4 @@
 		width: auto; height: auto; z-index: -100;
 		/*background: url(background.jpg) no-repeat;*/
 		background-size: cover;
-	}
-
-	#caption {
-		position: relative;
-	    display:none;
-	    z-index:1000;
-		background: blue;
-		color: #fff;
-		font-weight: bold;
-		padding: 15px 0;
-		width: 200px;
-		text-align: center;
-	}
-
-	#caption:after{
-		content: '';
-		display: block;  
-		position: absolute;
-		left: 0;
-		top: 100%;
-		width: 0;
-		height: 0;
-		border-top: 30px solid blue;
-		border-right: 20px solid transparent;
-		border-bottom: 0 solid transparent;
 	}
